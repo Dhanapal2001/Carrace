@@ -1,0 +1,139 @@
+.start {
+    width: 100%;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+
+    & button {
+        width: 100px;
+        font-size: large;
+        text-transform: uppercase;
+        background-color: red;
+        color: white;
+    }
+}
+
+.section {
+    background-color: gainsboro;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box {
+    margin: 5px;
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-the-race {
+    animation: move-car 1s ease-in;
+}
+
+@keyframes move-car {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: 80%;
+    }
+}
+
+@keyframes show-board {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: 20%
+    }
+}
+
+/*  */
+#start-line,
+#end-line {
+    opacity: 20%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: x-small;
+    height: 80vh;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+        margin: 0px;
+        transform: rotate(90deg);
+        text-align: center;
+        font-size: xx-large;
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+}
+
+#start-line {
+    left: 150px;
+}
+
+#end-line {
+    left: 73%;
+}
+
+.cars {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 100%;
+}
+
+
+#score-board {
+    position: absolute;
+    background-color: black;
+    color: whitesmoke;
+    opacity: 80%;
+    width: 600px;
+    border-radius: 20px;
+    left: 35%;
+    top: -50%;
+
+    & div {
+        font-size: xx-large;
+        font-family: monospace;
+        text-transform: uppercase;
+        margin: 50px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#car-1 {
+    background-image: url('./assets/cars/car-1.png');
+}
+
+#car-2 {
+    background-image: url('./assets/cars/car-2.png');
+}
+
+#car-3 {
+    background-image: url('./assets/cars/car-3.png');
+}
+
+#car-4 {
+    background-image: url('./assets/cars/car-4.png');
+}
+
+#car-5 {
+    background-image: url('./assets/cars/car-5.png');
+}
